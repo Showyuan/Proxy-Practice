@@ -1,0 +1,1003 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "alarm1",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "alarm2",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "changeOwner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTimestamp",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_alarm1",
+          "type": "uint256"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "initialized",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "proxiableUUID",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "setAlarm1",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_newImpl",
+          "type": "address"
+        }
+      ],
+      "name": "upgradeTo",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_newImpl",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "upgradeToAndCall",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b50610606806100206000396000f3fe608060405234801561001057600080fd5b50600436106100a95760003560e01c80634f1ef286116100715780634f1ef2861461011257806352d1902d146101255780638da5cb5b1461014b578063a6f9dae114610176578063e744bf4d146101a6578063fe4b84df146101b957600080fd5b806306c24bd7146100ae5780631236c069146100ca578063158ef93e146100d3578063188ec356146100f75780633659cfe6146100fd575b600080fd5b6100b760015481565b6040519081526020015b60405180910390f35b6100b760025481565b6000546100e790600160a01b900460ff1681565b60405190151581526020016100c1565b426100b7565b61011061010b366004610467565b6101cc565b005b61011061012036600461049f565b6101d8565b7fc5f16f0fcc639fa48a6947836d9850f504798523bf8c9a3a87d5876cf622bcf76100b7565b60005461015e906001600160a01b031681565b6040516001600160a01b0390911681526020016100c1565b610110610184366004610467565b600080546001600160a01b0319166001600160a01b0392909216919091179055565b6101106101b4366004610561565b600155565b6101106101c7366004610561565b61028c565b6101d5816102f4565b50565b6101e1826101cc565b6000826001600160a01b0316826040516101fb919061057a565b600060405180830381855af49150503d8060008114610236576040519150601f19603f3d011682016040523d82523d6000602084013e61023b565b606091505b50509050806102875760405162461bcd60e51b815260206004820152601360248201527219195b1959d85d1958d85b1b0819985a5b1959606a1b60448201526064015b60405180910390fd5b505050565b600054600160a01b900460ff16156102dc5760405162461bcd60e51b8152602060048201526013602482015272105b1c9958591e481a5b9a5d1a585b1a5e9959606a1b604482015260640161027e565b6001556000805460ff60a01b1916600160a01b179055565b60408051600481526024810182526020810180516001600160e01b03166352d1902d60e01b179052905160009182916001600160a01b038516916103379161057a565b6000604051808303816000865af19150503d8060008114610374576040519150601f19603f3d011682016040523d82523d6000602084013e610379565b606091505b5091509150816103bd5760405162461bcd60e51b815260206004820152600f60248201526e4e6f7420612050726f786961626c6560881b604482015260640161027e565b7fc5f16f0fcc639fa48a6947836d9850f504798523bf8c9a3a87d5876cf622bcf76103e7826105a9565b146104225760405162461bcd60e51b815260206004820152600b60248201526a139bdd0818dbdc9c9958dd60aa1b604482015260640161027e565b6102877fc5f16f0fcc639fa48a6947836d9850f504798523bf8c9a3a87d5876cf622bcf7849055565b80356001600160a01b038116811461046257600080fd5b919050565b60006020828403121561047957600080fd5b6104828261044b565b9392505050565b634e487b7160e01b600052604160045260246000fd5b600080604083850312156104b257600080fd5b6104bb8361044b565b9150602083013567ffffffffffffffff808211156104d857600080fd5b818501915085601f8301126104ec57600080fd5b8135818111156104fe576104fe610489565b604051601f8201601f19908116603f0116810190838211818310171561052657610526610489565b8160405282815288602084870101111561053f57600080fd5b8260208601602083013760006020848301015280955050505050509250929050565b60006020828403121561057357600080fd5b5035919050565b6000825160005b8181101561059b5760208186018101518583015201610581565b506000920191825250919050565b805160208083015191908110156105ca576000198160200360031b1b821691505b5091905056fea26469706673582212200bf05717248d598990a6c75d897c0e9d4e50cc21fdd504f76f153eed6bfe60ca64736f6c63430008110033",
+    "sourceMap": "221:426:21:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600436106100a95760003560e01c80634f1ef286116100715780634f1ef2861461011257806352d1902d146101255780638da5cb5b1461014b578063a6f9dae114610176578063e744bf4d146101a6578063fe4b84df146101b957600080fd5b806306c24bd7146100ae5780631236c069146100ca578063158ef93e146100d3578063188ec356146100f75780633659cfe6146100fd575b600080fd5b6100b760015481565b6040519081526020015b60405180910390f35b6100b760025481565b6000546100e790600160a01b900460ff1681565b60405190151581526020016100c1565b426100b7565b61011061010b366004610467565b6101cc565b005b61011061012036600461049f565b6101d8565b7fc5f16f0fcc639fa48a6947836d9850f504798523bf8c9a3a87d5876cf622bcf76100b7565b60005461015e906001600160a01b031681565b6040516001600160a01b0390911681526020016100c1565b610110610184366004610467565b600080546001600160a01b0319166001600160a01b0392909216919091179055565b6101106101b4366004610561565b600155565b6101106101c7366004610561565b61028c565b6101d5816102f4565b50565b6101e1826101cc565b6000826001600160a01b0316826040516101fb919061057a565b600060405180830381855af49150503d8060008114610236576040519150601f19603f3d011682016040523d82523d6000602084013e61023b565b606091505b50509050806102875760405162461bcd60e51b815260206004820152601360248201527219195b1959d85d1958d85b1b0819985a5b1959606a1b60448201526064015b60405180910390fd5b505050565b600054600160a01b900460ff16156102dc5760405162461bcd60e51b8152602060048201526013602482015272105b1c9958591e481a5b9a5d1a585b1a5e9959606a1b604482015260640161027e565b6001556000805460ff60a01b1916600160a01b179055565b60408051600481526024810182526020810180516001600160e01b03166352d1902d60e01b179052905160009182916001600160a01b038516916103379161057a565b6000604051808303816000865af19150503d8060008114610374576040519150601f19603f3d011682016040523d82523d6000602084013e610379565b606091505b5091509150816103bd5760405162461bcd60e51b815260206004820152600f60248201526e4e6f7420612050726f786961626c6560881b604482015260640161027e565b7fc5f16f0fcc639fa48a6947836d9850f504798523bf8c9a3a87d5876cf622bcf76103e7826105a9565b146104225760405162461bcd60e51b815260206004820152600b60248201526a139bdd0818dbdc9c9958dd60aa1b604482015260640161027e565b6102877fc5f16f0fcc639fa48a6947836d9850f504798523bf8c9a3a87d5876cf622bcf7849055565b80356001600160a01b038116811461046257600080fd5b919050565b60006020828403121561047957600080fd5b6104828261044b565b9392505050565b634e487b7160e01b600052604160045260246000fd5b600080604083850312156104b257600080fd5b6104bb8361044b565b9150602083013567ffffffffffffffff808211156104d857600080fd5b818501915085601f8301126104ec57600080fd5b8135818111156104fe576104fe610489565b604051601f8201601f19908116603f0116810190838211818310171561052657610526610489565b8160405282815288602084870101111561053f57600080fd5b8260208601602083013760006020848301015280955050505050509250929050565b60006020828403121561057357600080fd5b5035919050565b6000825160005b8181101561059b5760208186018101518583015201610581565b506000920191825250919050565b805160208083015191908110156105ca576000198160200360031b1b821691505b5091905056fea26469706673582212200bf05717248d598990a6c75d897c0e9d4e50cc21fdd504f76f153eed6bfe60ca64736f6c63430008110033",
+    "sourceMap": "221:426:21:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;147:21:17;;;;;;;;;160:25:25;;;148:2;133:18;147:21:17;;;;;;;;172;;;;;;120:23;;;;;-1:-1:-1;;;120:23:17;;;;;;;;;361:14:25;;354:22;336:41;;324:2;309:18;120:23:17;196:187:25;430:86:17;496:15;430:86;;264:125:21;;;;;;:::i;:::-;;:::i;:::-;;393:252;;;;;;:::i;:::-;;:::i;101:139:19:-;169:66;101:139;;96:20:17;;;;;-1:-1:-1;;;;;96:20:17;;;;;;-1:-1:-1;;;;;2235:32:25;;;2217:51;;2205:2;2190:18;96:20:17;2071:203:25;520:75:17;;;;;;:::i;:::-;573:5;:17;;-1:-1:-1;;;;;;573:17:17;-1:-1:-1;;;;;573:17:17;;;;;;;;;;520:75;350:76;;;;;;:::i;:::-;402:6;:19;350:76;198:148;;;;;;:::i;:::-;;:::i;264:125:21:-;357:27;375:8;357:17;:27::i;:::-;264:125;:::o;393:252::-;532:20;542:8;532:9;:20::i;:::-;559:8;572;-1:-1:-1;;;;;572:21:21;594:4;572:27;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;558:41;;;613:3;605:35;;;;-1:-1:-1;;;605:35:21;;3083:2:25;605:35:21;;;3065:21:25;3122:2;3102:18;;;3095:30;-1:-1:-1;;;3141:18:25;;;3134:49;3200:18;;605:35:21;;;;;;;;;463:182;393:252;;:::o;198:148:17:-;259:11;;-1:-1:-1;;;259:11:17;;;;258:12;250:44;;;;-1:-1:-1;;;250:44:17;;3431:2:25;250:44:17;;;3413:21:25;3470:2;3450:18;;;3443:30;-1:-1:-1;;;3489:18:25;;;3482:49;3548:18;;250:44:17;3229:343:25;250:44:17;300:6;:16;323:11;:18;;-1:-1:-1;;;;323:18:17;-1:-1:-1;;;323:18:17;;;198:148::o;244:574:19:-;591:42;;;;;;;;;;;;;;;;-1:-1:-1;;;;;591:42:19;-1:-1:-1;;;591:42:19;;;575:59;;543:8;;;;-1:-1:-1;;;;;575:15:19;;;:59;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;542:92;;;;649:3;641:31;;;;-1:-1:-1;;;641:31:19;;3779:2:25;641:31:19;;;3761:21:25;3818:2;3798:18;;;3791:30;-1:-1:-1;;;3837:18:25;;;3830:45;3892:18;;641:31:19;3577:339:25;641:31:19;169:66;686:13;694:4;686:13;:::i;:::-;:32;678:57;;;;-1:-1:-1;;;678:57:19;;4425:2:25;678:57:19;;;4407:21:25;4464:2;4444:18;;;4437:30;-1:-1:-1;;;4483:18:25;;;4476:41;4534:18;;678:57:19;4223:335:25;678:57:19;742:71;776:22;802:10;911:20;;822:119;388:173:25;456:20;;-1:-1:-1;;;;;505:31:25;;495:42;;485:70;;551:1;548;541:12;485:70;388:173;;;:::o;566:186::-;625:6;678:2;666:9;657:7;653:23;649:32;646:52;;;694:1;691;684:12;646:52;717:29;736:9;717:29;:::i;:::-;707:39;566:186;-1:-1:-1;;;566:186:25:o;757:127::-;818:10;813:3;809:20;806:1;799:31;849:4;846:1;839:15;873:4;870:1;863:15;889:995;966:6;974;1027:2;1015:9;1006:7;1002:23;998:32;995:52;;;1043:1;1040;1033:12;995:52;1066:29;1085:9;1066:29;:::i;:::-;1056:39;;1146:2;1135:9;1131:18;1118:32;1169:18;1210:2;1202:6;1199:14;1196:34;;;1226:1;1223;1216:12;1196:34;1264:6;1253:9;1249:22;1239:32;;1309:7;1302:4;1298:2;1294:13;1290:27;1280:55;;1331:1;1328;1321:12;1280:55;1367:2;1354:16;1389:2;1385;1382:10;1379:36;;;1395:18;;:::i;:::-;1470:2;1464:9;1438:2;1524:13;;-1:-1:-1;;1520:22:25;;;1544:2;1516:31;1512:40;1500:53;;;1568:18;;;1588:22;;;1565:46;1562:72;;;1614:18;;:::i;:::-;1654:10;1650:2;1643:22;1689:2;1681:6;1674:18;1729:7;1724:2;1719;1715;1711:11;1707:20;1704:33;1701:53;;;1750:1;1747;1740:12;1701:53;1806:2;1801;1797;1793:11;1788:2;1780:6;1776:15;1763:46;1851:1;1846:2;1841;1833:6;1829:15;1825:24;1818:35;1872:6;1862:16;;;;;;;889:995;;;;;:::o;2279:180::-;2338:6;2391:2;2379:9;2370:7;2366:23;2362:32;2359:52;;;2407:1;2404;2397:12;2359:52;-1:-1:-1;2430:23:25;;2279:180;-1:-1:-1;2279:180:25:o;2464:412::-;2593:3;2631:6;2625:13;2656:1;2666:129;2680:6;2677:1;2674:13;2666:129;;;2778:4;2762:14;;;2758:25;;2752:32;2739:11;;;2732:53;2695:12;2666:129;;;-1:-1:-1;2850:1:25;2814:16;;2839:13;;;-1:-1:-1;2814:16:25;2464:412;-1:-1:-1;2464:412:25:o;3921:297::-;4039:12;;4086:4;4075:16;;;4069:23;;4039:12;4104:16;;4101:111;;;4198:1;4194:6;4184;4178:4;4174:17;4171:1;4167:25;4163:38;4156:5;4152:50;4143:59;;4101:111;;3921:297;;;:::o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "alarm1()": "06c24bd7",
+    "alarm2()": "1236c069",
+    "changeOwner(address)": "a6f9dae1",
+    "getTimestamp()": "188ec356",
+    "initialize(uint256)": "fe4b84df",
+    "initialized()": "158ef93e",
+    "owner()": "8da5cb5b",
+    "proxiableUUID()": "52d1902d",
+    "setAlarm1(uint256)": "e744bf4d",
+    "upgradeTo(address)": "3659cfe6",
+    "upgradeToAndCall(address,bytes)": "4f1ef286"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"alarm1\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"alarm2\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_newOwner\",\"type\":\"address\"}],\"name\":\"changeOwner\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTimestamp\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_alarm1\",\"type\":\"uint256\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"initialized\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"proxiableUUID\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_timestamp\",\"type\":\"uint256\"}],\"name\":\"setAlarm1\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_newImpl\",\"type\":\"address\"}],\"name\":\"upgradeTo\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_newImpl\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"upgradeToAndCall\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/UUPSLogic/ClockUUPS.sol\":\"ClockUUPS\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"src/Logic/Clock.sol\":{\"keccak256\":\"0x8feef6821fa972bda714d0761223b422f1e708ca1db09113ffa825436ee54e0d\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://41c5235b0637ba86311d4c92b750314fdd9407a2bd9ea7bc0a690007cba0ac0b\",\"dweb:/ipfs/QmQeg2oBtJmde3Xze3zwdhqgi8RqdLQNRPq878wD3ZfxyT\"]},\"src/Proxy/Proxiable.sol\":{\"keccak256\":\"0xa2f4519d1c233f6b3c8cfcfe3895c322261d0515546fae8c8d31b1e8f23a5985\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://b2be08907150ea4f8d3ed5307e9abd0cdc28c2c8f62c15e191ea65da737b0137\",\"dweb:/ipfs/QmNiTprs9mQV5gvQLNSL8UFG7NDCPpjkUWfkx9MNMCbme7\"]},\"src/SlotManipulate.sol\":{\"keccak256\":\"0x4e2c597477569f777c02c1057dbad63ccab282f5c68f43ce210d9d456787380b\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://3dad68abbd347a2704f68c3cea24d47bf6a70096283ce9f4824ab0b90c5d3475\",\"dweb:/ipfs/QmdPMT1zB8b7ve7C83WSHn4H3k7F9A5Tjy9dXegcpHmDZ8\"]},\"src/UUPSLogic/ClockUUPS.sol\":{\"keccak256\":\"0x06c976ae1a7a80d74f18f9915b16b02acef228cf5691d62ffa07547699009350\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://8dcc8b45a0e5c0d8aa4171cf4aee5e81bf3db3830b111e7a66ee53869c481203\",\"dweb:/ipfs/QmWshC5vwjtny18PrnAzBTBGeDrj5UbRRMQjjoRD38j8oZ\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "alarm1",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "alarm2",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_newOwner",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "changeOwner"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getTimestamp",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_alarm1",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "initialize"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "initialized",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "owner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "proxiableUUID",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_timestamp",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setAlarm1"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_newImpl",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "upgradeTo"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_newImpl",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "upgradeToAndCall"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/UUPSLogic/ClockUUPS.sol": "ClockUUPS"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/Logic/Clock.sol": {
+        "keccak256": "0x8feef6821fa972bda714d0761223b422f1e708ca1db09113ffa825436ee54e0d",
+        "urls": [
+          "bzz-raw://41c5235b0637ba86311d4c92b750314fdd9407a2bd9ea7bc0a690007cba0ac0b",
+          "dweb:/ipfs/QmQeg2oBtJmde3Xze3zwdhqgi8RqdLQNRPq878wD3ZfxyT"
+        ],
+        "license": "SEE LICENSE IN LICENSE"
+      },
+      "src/Proxy/Proxiable.sol": {
+        "keccak256": "0xa2f4519d1c233f6b3c8cfcfe3895c322261d0515546fae8c8d31b1e8f23a5985",
+        "urls": [
+          "bzz-raw://b2be08907150ea4f8d3ed5307e9abd0cdc28c2c8f62c15e191ea65da737b0137",
+          "dweb:/ipfs/QmNiTprs9mQV5gvQLNSL8UFG7NDCPpjkUWfkx9MNMCbme7"
+        ],
+        "license": "SEE LICENSE IN LICENSE"
+      },
+      "src/SlotManipulate.sol": {
+        "keccak256": "0x4e2c597477569f777c02c1057dbad63ccab282f5c68f43ce210d9d456787380b",
+        "urls": [
+          "bzz-raw://3dad68abbd347a2704f68c3cea24d47bf6a70096283ce9f4824ab0b90c5d3475",
+          "dweb:/ipfs/QmdPMT1zB8b7ve7C83WSHn4H3k7F9A5Tjy9dXegcpHmDZ8"
+        ],
+        "license": "SEE LICENSE IN LICENSE"
+      },
+      "src/UUPSLogic/ClockUUPS.sol": {
+        "keccak256": "0x06c976ae1a7a80d74f18f9915b16b02acef228cf5691d62ffa07547699009350",
+        "urls": [
+          "bzz-raw://8dcc8b45a0e5c0d8aa4171cf4aee5e81bf3db3830b111e7a66ee53869c481203",
+          "dweb:/ipfs/QmWshC5vwjtny18PrnAzBTBGeDrj5UbRRMQjjoRD38j8oZ"
+        ],
+        "license": "SEE LICENSE IN LICENSE"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/UUPSLogic/ClockUUPS.sol",
+    "id": 29299,
+    "exportedSymbols": {
+      "Clock": [
+        29033
+      ],
+      "ClockUUPS": [
+        29298
+      ],
+      "Proxiable": [
+        29117
+      ],
+      "Slots": [
+        29147
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "51:596:21",
+    "nodes": [
+      {
+        "id": 29253,
+        "nodeType": "PragmaDirective",
+        "src": "51:24:21",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 29255,
+        "nodeType": "ImportDirective",
+        "src": "77:46:21",
+        "nodes": [],
+        "absolutePath": "src/SlotManipulate.sol",
+        "file": "../SlotManipulate.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 29299,
+        "sourceUnit": 29252,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 29254,
+              "name": "Slots",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 29147,
+              "src": "86:5:21",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 29257,
+        "nodeType": "ImportDirective",
+        "src": "124:43:21",
+        "nodes": [],
+        "absolutePath": "src/Logic/Clock.sol",
+        "file": "../Logic/Clock.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 29299,
+        "sourceUnit": 29034,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 29256,
+              "name": "Clock",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 29033,
+              "src": "133:5:21",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 29259,
+        "nodeType": "ImportDirective",
+        "src": "168:51:21",
+        "nodes": [],
+        "absolutePath": "src/Proxy/Proxiable.sol",
+        "file": "../Proxy/Proxiable.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 29299,
+        "sourceUnit": 29118,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 29258,
+              "name": "Proxiable",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 29117,
+              "src": "177:9:21",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 29298,
+        "nodeType": "ContractDefinition",
+        "src": "221:426:21",
+        "nodes": [
+          {
+            "id": 29273,
+            "nodeType": "FunctionDefinition",
+            "src": "264:125:21",
+            "nodes": [],
+            "body": {
+              "id": 29272,
+              "nodeType": "Block",
+              "src": "308:81:21",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 29269,
+                        "name": "_newImpl",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 29265,
+                        "src": "375:8:21",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 29268,
+                      "name": "updateCodeAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 29107,
+                      "src": "357:17:21",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 29270,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "357:27:21",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 29271,
+                  "nodeType": "ExpressionStatement",
+                  "src": "357:27:21"
+                }
+              ]
+            },
+            "functionSelector": "3659cfe6",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "upgradeTo",
+            "nameLocation": "273:9:21",
+            "parameters": {
+              "id": 29266,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 29265,
+                  "mutability": "mutable",
+                  "name": "_newImpl",
+                  "nameLocation": "291:8:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 29273,
+                  "src": "283:16:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 29264,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "283:7:21",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "282:18:21"
+            },
+            "returnParameters": {
+              "id": 29267,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "308:0:21"
+            },
+            "scope": 29298,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 29297,
+            "nodeType": "FunctionDefinition",
+            "src": "393:252:21",
+            "nodes": [],
+            "body": {
+              "id": 29296,
+              "nodeType": "Block",
+              "src": "463:182:21",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 29281,
+                        "name": "_newImpl",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 29275,
+                        "src": "542:8:21",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 29280,
+                      "name": "upgradeTo",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 29273,
+                      "src": "532:9:21",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 29282,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "532:20:21",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 29283,
+                  "nodeType": "ExpressionStatement",
+                  "src": "532:20:21"
+                },
+                {
+                  "assignments": [
+                    29285,
+                    null
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 29285,
+                      "mutability": "mutable",
+                      "name": "_ok",
+                      "nameLocation": "564:3:21",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 29296,
+                      "src": "559:8:21",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "typeName": {
+                        "id": 29284,
+                        "name": "bool",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "559:4:21",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "visibility": "internal"
+                    },
+                    null
+                  ],
+                  "id": 29290,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "id": 29288,
+                        "name": "data",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 29277,
+                        "src": "594:4:21",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      ],
+                      "expression": {
+                        "id": 29286,
+                        "name": "_newImpl",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 29275,
+                        "src": "572:8:21",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "id": 29287,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "581:12:21",
+                      "memberName": "delegatecall",
+                      "nodeType": "MemberAccess",
+                      "src": "572:21:21",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_baredelegatecall_nonpayable$_t_bytes_memory_ptr_$returns$_t_bool_$_t_bytes_memory_ptr_$",
+                        "typeString": "function (bytes memory) returns (bool,bytes memory)"
+                      }
+                    },
+                    "id": 29289,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "572:27:21",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_bool_$_t_bytes_memory_ptr_$",
+                      "typeString": "tuple(bool,bytes memory)"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "558:41:21"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 29292,
+                        "name": "_ok",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 29285,
+                        "src": "613:3:21",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "64656c656761746563616c6c206661696c6564",
+                        "id": 29293,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "618:21:21",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_05cf1118cd6854a69c478b1e66867edbe3ae1e579d49e23c31b73cbbdf29b708",
+                          "typeString": "literal_string \"delegatecall failed\""
+                        },
+                        "value": "delegatecall failed"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_05cf1118cd6854a69c478b1e66867edbe3ae1e579d49e23c31b73cbbdf29b708",
+                          "typeString": "literal_string \"delegatecall failed\""
+                        }
+                      ],
+                      "id": 29291,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        -18,
+                        -18
+                      ],
+                      "referencedDeclaration": -18,
+                      "src": "605:7:21",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 29294,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "605:35:21",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 29295,
+                  "nodeType": "ExpressionStatement",
+                  "src": "605:35:21"
+                }
+              ]
+            },
+            "functionSelector": "4f1ef286",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "upgradeToAndCall",
+            "nameLocation": "402:16:21",
+            "parameters": {
+              "id": 29278,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 29275,
+                  "mutability": "mutable",
+                  "name": "_newImpl",
+                  "nameLocation": "427:8:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 29297,
+                  "src": "419:16:21",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 29274,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "419:7:21",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 29277,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "450:4:21",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 29297,
+                  "src": "437:17:21",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 29276,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "437:5:21",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "418:37:21"
+            },
+            "returnParameters": {
+              "id": 29279,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "463:0:21"
+            },
+            "scope": 29298,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 29260,
+              "name": "Clock",
+              "nameLocations": [
+                "243:5:21"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 29033,
+              "src": "243:5:21"
+            },
+            "id": 29261,
+            "nodeType": "InheritanceSpecifier",
+            "src": "243:5:21"
+          },
+          {
+            "baseName": {
+              "id": 29262,
+              "name": "Proxiable",
+              "nameLocations": [
+                "250:9:21"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 29117,
+              "src": "250:9:21"
+            },
+            "id": 29263,
+            "nodeType": "InheritanceSpecifier",
+            "src": "250:9:21"
+          }
+        ],
+        "canonicalName": "ClockUUPS",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          29298,
+          29117,
+          29033
+        ],
+        "name": "ClockUUPS",
+        "nameLocation": "230:9:21",
+        "scope": 29299,
+        "usedErrors": []
+      }
+    ],
+    "license": "SEE LICENSE IN LICENSE"
+  },
+  "id": 21
+}

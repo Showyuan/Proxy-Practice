@@ -1,0 +1,530 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "alarm1",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "alarm2",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "changeOwner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTimestamp",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_alarm1",
+          "type": "uint256"
+        }
+      ],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "initialized",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "proxiableUUID",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "setAlarm1",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "setAlarm2",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b50610294806100206000396000f3fe608060405234801561001057600080fd5b506004361061009e5760003560e01c80638da5cb5b116100665780638da5cb5b14610118578063a6f9dae114610143578063b2a1974714610175578063e744bf4d14610188578063fe4b84df1461019b57600080fd5b806306c24bd7146100a35780631236c069146100bf578063158ef93e146100c8578063188ec356146100ec57806352d1902d146100f2575b600080fd5b6100ac60015481565b6040519081526020015b60405180910390f35b6100ac60025481565b6000546100dc90600160a01b900460ff1681565b60405190151581526020016100b6565b426100ac565b7fc5f16f0fcc639fa48a6947836d9850f504798523bf8c9a3a87d5876cf622bcf76100ac565b60005461012b906001600160a01b031681565b6040516001600160a01b0390911681526020016100b6565b610173610151366004610215565b600080546001600160a01b0319166001600160a01b0392909216919091179055565b005b610173610183366004610245565b600255565b610173610196366004610245565b600155565b6101736101a9366004610245565b600054600160a01b900460ff16156101fd5760405162461bcd60e51b8152602060048201526013602482015272105b1c9958591e481a5b9a5d1a585b1a5e9959606a1b604482015260640160405180910390fd5b6001556000805460ff60a01b1916600160a01b179055565b60006020828403121561022757600080fd5b81356001600160a01b038116811461023e57600080fd5b9392505050565b60006020828403121561025757600080fd5b503591905056fea2646970667358221220af4157ece867987bb2a94b10ee327de4f9452d0daea557081b13f0aa54d3a94364736f6c63430008110033",
+    "sourceMap": "258:45:26:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b506004361061009e5760003560e01c80638da5cb5b116100665780638da5cb5b14610118578063a6f9dae114610143578063b2a1974714610175578063e744bf4d14610188578063fe4b84df1461019b57600080fd5b806306c24bd7146100a35780631236c069146100bf578063158ef93e146100c8578063188ec356146100ec57806352d1902d146100f2575b600080fd5b6100ac60015481565b6040519081526020015b60405180910390f35b6100ac60025481565b6000546100dc90600160a01b900460ff1681565b60405190151581526020016100b6565b426100ac565b7fc5f16f0fcc639fa48a6947836d9850f504798523bf8c9a3a87d5876cf622bcf76100ac565b60005461012b906001600160a01b031681565b6040516001600160a01b0390911681526020016100b6565b610173610151366004610215565b600080546001600160a01b0319166001600160a01b0392909216919091179055565b005b610173610183366004610245565b600255565b610173610196366004610245565b600155565b6101736101a9366004610245565b600054600160a01b900460ff16156101fd5760405162461bcd60e51b8152602060048201526013602482015272105b1c9958591e481a5b9a5d1a585b1a5e9959606a1b604482015260640160405180910390fd5b6001556000805460ff60a01b1916600160a01b179055565b60006020828403121561022757600080fd5b81356001600160a01b038116811461023e57600080fd5b9392505050565b60006020828403121561025757600080fd5b503591905056fea2646970667358221220af4157ece867987bb2a94b10ee327de4f9452d0daea557081b13f0aa54d3a94364736f6c63430008110033",
+    "sourceMap": "258:45:26:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;147:21:18;;;;;;;;;160:25:30;;;148:2;133:18;147:21:18;;;;;;;;172;;;;;;120:23;;;;;-1:-1:-1;;;120:23:18;;;;;;;;;361:14:30;;354:22;336:41;;324:2;309:18;120:23:18;196:187:30;430:86:18;496:15;430:86;;101:139:20;169:66;101:139;;96:20:18;;;;;-1:-1:-1;;;;;96:20:18;;;;;;-1:-1:-1;;;;;734:32:30;;;716:51;;704:2;689:18;96:20:18;570:203:30;520:75:18;;;;;;:::i;:::-;573:5;:17;;-1:-1:-1;;;;;;573:17:18;-1:-1:-1;;;;;573:17:18;;;;;;;;;;520:75;;;167:77:19;;;;;;:::i;:::-;220:6;:19;167:77;350:76:18;;;;;;:::i;:::-;402:6;:19;350:76;198:148;;;;;;:::i;:::-;259:11;;-1:-1:-1;;;259:11:18;;;;258:12;250:44;;;;-1:-1:-1;;;250:44:18;;1456:2:30;250:44:18;;;1438:21:30;1495:2;1475:18;;;1468:30;-1:-1:-1;;;1514:18:30;;;1507:49;1573:18;;250:44:18;;;;;;;;300:6;:16;323:11;:18;;-1:-1:-1;;;;323:18:18;-1:-1:-1;;;323:18:18;;;198:148::o;778:286:30:-;837:6;890:2;878:9;869:7;865:23;861:32;858:52;;;906:1;903;896:12;858:52;932:23;;-1:-1:-1;;;;;984:31:30;;974:42;;964:70;;1030:1;1027;1020:12;964:70;1053:5;778:286;-1:-1:-1;;;778:286:30:o;1069:180::-;1128:6;1181:2;1169:9;1160:7;1156:23;1152:32;1149:52;;;1197:1;1194;1187:12;1149:52;-1:-1:-1;1220:23:30;;1069:180;-1:-1:-1;1069:180:30:o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "alarm1()": "06c24bd7",
+    "alarm2()": "1236c069",
+    "changeOwner(address)": "a6f9dae1",
+    "getTimestamp()": "188ec356",
+    "initialize(uint256)": "fe4b84df",
+    "initialized()": "158ef93e",
+    "owner()": "8da5cb5b",
+    "proxiableUUID()": "52d1902d",
+    "setAlarm1(uint256)": "e744bf4d",
+    "setAlarm2(uint256)": "b2a19747"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"alarm1\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"alarm2\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_newOwner\",\"type\":\"address\"}],\"name\":\"changeOwner\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTimestamp\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_alarm1\",\"type\":\"uint256\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"initialized\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"proxiableUUID\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_timestamp\",\"type\":\"uint256\"}],\"name\":\"setAlarm1\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_timestamp\",\"type\":\"uint256\"}],\"name\":\"setAlarm2\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/UUPSLogic/ClockUUPSV3.sol\":\"ClockUUPSV3\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"src/Logic/Clock.sol\":{\"keccak256\":\"0x8feef6821fa972bda714d0761223b422f1e708ca1db09113ffa825436ee54e0d\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://41c5235b0637ba86311d4c92b750314fdd9407a2bd9ea7bc0a690007cba0ac0b\",\"dweb:/ipfs/QmQeg2oBtJmde3Xze3zwdhqgi8RqdLQNRPq878wD3ZfxyT\"]},\"src/Logic/ClockV2.sol\":{\"keccak256\":\"0x83a23a54bb73c42dc6d9a75b64a719130a6dcff5150333fd79aa001f88ea527a\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://aca8348c20c4e042693bf38ad29aa84f5679c30c64b2d26a517ab4500ba47095\",\"dweb:/ipfs/QmfVtxFkkqacvejMPkj9GBR9erMdPwgm9Ms6jQTSStxQYp\"]},\"src/Proxy/Proxiable.sol\":{\"keccak256\":\"0xa2f4519d1c233f6b3c8cfcfe3895c322261d0515546fae8c8d31b1e8f23a5985\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://b2be08907150ea4f8d3ed5307e9abd0cdc28c2c8f62c15e191ea65da737b0137\",\"dweb:/ipfs/QmNiTprs9mQV5gvQLNSL8UFG7NDCPpjkUWfkx9MNMCbme7\"]},\"src/SlotManipulate.sol\":{\"keccak256\":\"0x4e2c597477569f777c02c1057dbad63ccab282f5c68f43ce210d9d456787380b\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://3dad68abbd347a2704f68c3cea24d47bf6a70096283ce9f4824ab0b90c5d3475\",\"dweb:/ipfs/QmdPMT1zB8b7ve7C83WSHn4H3k7F9A5Tjy9dXegcpHmDZ8\"]},\"src/UUPSLogic/ClockUUPSV3.sol\":{\"keccak256\":\"0xcd27d1dd75b666b97ef52eec6f485893bd627bc2e913634b8870f4d78974374a\",\"license\":\"SEE LICENSE IN LICENSE\",\"urls\":[\"bzz-raw://c0c3bfb0bed87a1a94a32deffd981c2ec7fc7296f35efae26776c137f77d2ab1\",\"dweb:/ipfs/QmWhTxdpFKfwzSJp9sLMFAwEtjC9bU8qDeskasYfs69zr7\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "alarm1",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "alarm2",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_newOwner",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "changeOwner"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getTimestamp",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_alarm1",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "initialize"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "initialized",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "owner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "proxiableUUID",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_timestamp",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setAlarm1"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_timestamp",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setAlarm2"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/UUPSLogic/ClockUUPSV3.sol": "ClockUUPSV3"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/Logic/Clock.sol": {
+        "keccak256": "0x8feef6821fa972bda714d0761223b422f1e708ca1db09113ffa825436ee54e0d",
+        "urls": [
+          "bzz-raw://41c5235b0637ba86311d4c92b750314fdd9407a2bd9ea7bc0a690007cba0ac0b",
+          "dweb:/ipfs/QmQeg2oBtJmde3Xze3zwdhqgi8RqdLQNRPq878wD3ZfxyT"
+        ],
+        "license": "SEE LICENSE IN LICENSE"
+      },
+      "src/Logic/ClockV2.sol": {
+        "keccak256": "0x83a23a54bb73c42dc6d9a75b64a719130a6dcff5150333fd79aa001f88ea527a",
+        "urls": [
+          "bzz-raw://aca8348c20c4e042693bf38ad29aa84f5679c30c64b2d26a517ab4500ba47095",
+          "dweb:/ipfs/QmfVtxFkkqacvejMPkj9GBR9erMdPwgm9Ms6jQTSStxQYp"
+        ],
+        "license": "SEE LICENSE IN LICENSE"
+      },
+      "src/Proxy/Proxiable.sol": {
+        "keccak256": "0xa2f4519d1c233f6b3c8cfcfe3895c322261d0515546fae8c8d31b1e8f23a5985",
+        "urls": [
+          "bzz-raw://b2be08907150ea4f8d3ed5307e9abd0cdc28c2c8f62c15e191ea65da737b0137",
+          "dweb:/ipfs/QmNiTprs9mQV5gvQLNSL8UFG7NDCPpjkUWfkx9MNMCbme7"
+        ],
+        "license": "SEE LICENSE IN LICENSE"
+      },
+      "src/SlotManipulate.sol": {
+        "keccak256": "0x4e2c597477569f777c02c1057dbad63ccab282f5c68f43ce210d9d456787380b",
+        "urls": [
+          "bzz-raw://3dad68abbd347a2704f68c3cea24d47bf6a70096283ce9f4824ab0b90c5d3475",
+          "dweb:/ipfs/QmdPMT1zB8b7ve7C83WSHn4H3k7F9A5Tjy9dXegcpHmDZ8"
+        ],
+        "license": "SEE LICENSE IN LICENSE"
+      },
+      "src/UUPSLogic/ClockUUPSV3.sol": {
+        "keccak256": "0xcd27d1dd75b666b97ef52eec6f485893bd627bc2e913634b8870f4d78974374a",
+        "urls": [
+          "bzz-raw://c0c3bfb0bed87a1a94a32deffd981c2ec7fc7296f35efae26776c137f77d2ab1",
+          "dweb:/ipfs/QmWhTxdpFKfwzSJp9sLMFAwEtjC9bU8qDeskasYfs69zr7"
+        ],
+        "license": "SEE LICENSE IN LICENSE"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/UUPSLogic/ClockUUPSV3.sol",
+    "id": 29536,
+    "exportedSymbols": {
+      "ClockUUPSV3": [
+        29535
+      ],
+      "ClockV2": [
+        29134
+      ],
+      "Proxiable": [
+        29201
+      ],
+      "Slots": [
+        29241
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "51:252:26",
+    "nodes": [
+      {
+        "id": 29524,
+        "nodeType": "PragmaDirective",
+        "src": "51:24:26",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 29526,
+        "nodeType": "ImportDirective",
+        "src": "77:46:26",
+        "nodes": [],
+        "absolutePath": "src/SlotManipulate.sol",
+        "file": "../SlotManipulate.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 29536,
+        "sourceUnit": 29346,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 29525,
+              "name": "Slots",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 29241,
+              "src": "86:5:26",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 29528,
+        "nodeType": "ImportDirective",
+        "src": "124:47:26",
+        "nodes": [],
+        "absolutePath": "src/Logic/ClockV2.sol",
+        "file": "../Logic/ClockV2.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 29536,
+        "sourceUnit": 29135,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 29527,
+              "name": "ClockV2",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 29134,
+              "src": "133:7:26",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 29530,
+        "nodeType": "ImportDirective",
+        "src": "172:51:26",
+        "nodes": [],
+        "absolutePath": "src/Proxy/Proxiable.sol",
+        "file": "../Proxy/Proxiable.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 29536,
+        "sourceUnit": 29202,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 29529,
+              "name": "Proxiable",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 29201,
+              "src": "181:9:26",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 29535,
+        "nodeType": "ContractDefinition",
+        "src": "258:45:26",
+        "nodes": [],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 29531,
+              "name": "ClockV2",
+              "nameLocations": [
+                "282:7:26"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 29134,
+              "src": "282:7:26"
+            },
+            "id": 29532,
+            "nodeType": "InheritanceSpecifier",
+            "src": "282:7:26"
+          },
+          {
+            "baseName": {
+              "id": 29533,
+              "name": "Proxiable",
+              "nameLocations": [
+                "291:9:26"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 29201,
+              "src": "291:9:26"
+            },
+            "id": 29534,
+            "nodeType": "InheritanceSpecifier",
+            "src": "291:9:26"
+          }
+        ],
+        "canonicalName": "ClockUUPSV3",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          29535,
+          29201,
+          29134,
+          29117
+        ],
+        "name": "ClockUUPSV3",
+        "nameLocation": "267:11:26",
+        "scope": 29536,
+        "usedErrors": []
+      }
+    ],
+    "license": "SEE LICENSE IN LICENSE"
+  },
+  "id": 26
+}
